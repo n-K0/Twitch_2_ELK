@@ -7,7 +7,7 @@ import requests
 sys.getdefaultencoding()
 
 
-twitch = Twitch('***REMOVED***', '***REMOVED***')
+twitch = Twitch('api_key', 'secret_api')
 
 file1 = open('./liste_streamer.txt', 'r')
 Lines = file1.readlines()

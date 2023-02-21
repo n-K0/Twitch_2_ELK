@@ -5,12 +5,12 @@ from datetime import datetime
 import sys, time, requests, calendar, datetime
 sys.getdefaultencoding()
 
-twitch = Twitch('***REMOVED***', '***REMOVED***')
+twitch = Twitch('api_key', 'secret_api')
 
 
 file1 = open('./liste_streamer.txt', 'r')
 Lines = file1.readlines()
-es = Elasticsearch([{'host': '***REMOVED***', 'port': 9200}])
+es = Elasticsearch([{'host': 'elastic_host', 'port': 9200}])
 
 for line in Lines:
     
